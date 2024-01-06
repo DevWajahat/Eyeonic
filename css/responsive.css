@@ -1,0 +1,68 @@
+@media screen and (max-width: 600px) {
+    section{
+        padding: 125px 30px;
+    }
+}
+@media (max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+
+}
+@media (max-width:692px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header .nav li{
+        margin: 0 7px;
+    }
+    .wrapper img{
+        left: 0;
+    }
+    .wrapper{
+        margin-top: 1000px;
+    }
+    .box h1{
+        justify-content: center;
+        margin-top: 200px;
+    }
+}
+@media (max-width:800px){
+        .box h1{
+            font-size: 32px;
+        }
+        .box h3{
+            font-size: 20px;
+        }
+        .box a.boxBtn{
+            padding: 15px 40px;
+        }
+        .shop-details{
+           justify-content: center;
+           align-items: center;
+           width: 100vw;
+           flex-direction: column;
+        }
+    }
+    @media (max-width:1038px){
+    .shop-details{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+        height: 450px;
+     }
+}
+/* hero area ka kaam khtam */
+/* footer ka kaam shuru */
+@media (max-width:500px) {
+    footer{
+      
+      margin-top: 10px;
+      margin-bottom: 20px;
+      height: 420px;
+    }
+}

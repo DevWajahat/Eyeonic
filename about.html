@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/allstyle.css">
+    <link rel="stylesheet" href="css/allresponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+    <style>
+      #about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#about-us h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-us img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    #about-us {
+        padding: 30px 0;
+    }
+
+    #about-us .container {
+        padding: 0 15px;
+    }
+
+    #about-us .row {
+        flex-direction: column;
+    }
+
+    #about-us h2, #about-us p {
+        text-align: center;
+    }
+
+    #about-us img {
+        max-width: 100%;
+    }
+    .about-image {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+}
+
+    </style>
+  </head>
+<body>
+    <header>
+        <h1 class="Logo" style="color: #fff;">Eyeonic</h1>
+        <input type="checkbox" name="" id="" class="butn">
+            <div class="nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a onclick="fun()"style="color: #fff;">Log In&nbsp;&nbsp;<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
+                    <li><a onclick="fun()"style="color: #fff;">Sign Up&nbsp;&nbsp;<i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></a></li>
+                </ol>
+            </div>
+       </header>
+       <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/new-arrivals.jpg" alt="Image 1" class="about-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>
+                        Founded with the mission of revolutionizing the eyewear industry, Eyeonic is committed to offering eyeglasses and sunglasses that go beyond mere utility. We believe that your eyewear is an extension of your personality, a reflection of your style, and a crucial part of your daily life. That's why we've curated a collection that combines functionality and fashion, ensuring you not only see better but also look better.
+                    </p>
+                    <p>
+                        At Eyeonic, we value the artistry of craftsmanship. Our lenses and frames are meticulously designed to meet the highest standards of quality. Whether you're in need of prescription glasses, chic sunglasses, or just want to enhance your look, our collection features a wide range of options that cater to all your eyewear needs. Every pair is carefully inspected and crafted with the utmost attention to detail.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/HappyEyesHappyLives-Desktop.jpg" alt="Image 2" class="about-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Mission</h2>
+                    <p>
+                        We understand that selecting the perfect eyewear can be a personal journey. That's why we offer a personalized shopping experience that allows you to find eyewear that suits your unique style and needs. Our team of experts is ready to assist you in choosing the ideal frames and lenses that match your face shape, lifestyle, and preferences.
+                    </p>
+                    <p>
+                        Our commitment to your vision extends beyond our products. At Eyeonic, we're constantly evolving and staying ahead of the latest trends and innovations in eyewear. We aim to keep you informed about the latest in eye care and fashion, providing you with the knowledge and options to make the best choices for your vision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5" style="height: auto; padding-bottom: 20px;">
+      <div class="container-fluid">
+          <div class="detail-tabs">
+              <nav>
+                  <ul>
+                      <li><a href="about.html" class="text-light" style="text-decoration: none; color: #fff;">About Us</a></li>
+                      <li><a href="contact.html" class="text-light" style="text-decoration: none; color: #fff;">Contact Us</a></li>
+                      <li><a href="faqs.html" class="text-light" style="text-decoration: none; color: #fff;">FAQs</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="tagline" >
+              <p style="font-weight: 400 !important;">Eyeonic is more than just an eyewear destination; it's your gateway to a world of clarity and style. With a passion for perfect vision and a commitment to fashion, we bring you a curated collection of lenses and frames that not only enhance your sight but also elevate your look. Discover the perfect balance of precision and panache, only at Eyeonic. Your eyes deserve the best, and we deliver it in every pair we offer.</p>
+          </div>
+      </div>
+     </footer>
+     <footer style="height:50px !important;background-color:  rgb(8, 85, 115);"><center><p style="font-weight: 400 !important;">@All Copyrights Reserved 2023 By Eyeonic </p></center></footer>
+</body>
+</html>

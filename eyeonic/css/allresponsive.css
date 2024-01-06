@@ -1,0 +1,59 @@
+@media (max-width: 700px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .nav ol{
+        /* margin-top: 150px; */
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* header ka kaam khtm */
+/* products cards ka kaam shuru */
+@media (max-width: 700px){
+    .cc{
+        justify-content: center !important;
+        display: flex;
+        align-items: center !important;
+        align-self: center !important;
+        align-content: center !important;
+        align-tracks: center !important;
+    }
+    
+}
+@media (max-width: 712px) and (min-width:300px){
+    .headsun{
+        /* width: 200px; */
+        /* height: auto; */
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .hadtext{
+        /* width: 200px; */
+        /* height: auto; */
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .headson{
+        height: 320px;
+        flex-direction: column;
+    }
+    .headson-1{
+        height: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-son-1-details{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .head-son-details{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

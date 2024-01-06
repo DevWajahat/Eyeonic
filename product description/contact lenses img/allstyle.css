@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    color: #fff;
+    font-size: 1.5em;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav ol{
+    display: flex;
+    list-style: none;
+}
+.butn{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+.butn:before{
+    content: '\f0c9';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Font Awsome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
+.nav ol li{
+    margin: 1em;
+    gap: 90px;
+}
+.nav ol li a{
+    text-decoration: none;
+    padding: 0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px 10px 0 0;
+    background: #853333;
+    transform-origin: bottom;
+    background: linear-gradient(to right, #1bbbff,#084d63,#003851);
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
+}
+.nav ol li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+    color:white;
+}
+.breadcrumb{
+    gap:50px !important;
+    font-size: 22px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight:400 !important;
+}
+.breadcrumb-item a{
+    color: black !important;
+    text-decoration: none;
+}
+.breadcrumb-item a:hover{
+    color: rgb(15,110,253) !important;
+}
+.card-text{
+    font-weight: 400 !important;
+}
+.card-title{
+    font-weight: 750 !important;
+}
+/* .headsun-container{
+    position: relative;
+    bottom: 79px;
+} */
+/* shop ka kaam khtm */
+
+/* log in sign up ka kaam shuru */
+.headsun{
+    height: 150px;
+    width: 100%;
+    border: #084d63 1px solid;
+    background: linear-gradient(black , #084d63 );
+}
+.headson{
+    height: 150px;
+    width: 100%;
+    border: #084d63 1px solid;
+    background: linear-gradient(black , #084d63 );
+    display: flex;
+}
+.head-son-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head-son-details p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.head-son-details h1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.headson-1{
+    height: 150px;
+    width: 100%;
+    border: #084d63 1px solid;
+    background: linear-gradient(black , #084d63 );
+    display: flex;
+}
+.head-son-1-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head-son-1-details p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.head-son-1-details h1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.hadtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 60px; 
+}
+.hadimg{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    color: #fff; 
+    width: 300px;
+    margin-right: 20px;
+
+}
+.cc{
+    justify-content: center !important;
+    display: flex;
+    align-items: center !important;
+    align-self: center !important;
+    align-content: center !important;
+    align-tracks: center !important;
+}
+/* footer ka kaam shuru */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid{
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-bottom: 40px;
+}
+.detail-tabs{
+    width: 98%;
+    height: 80px;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-tabs ul{
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    margin-top: 30px;
+    list-style: none;
+}
+.details-tabs ul li a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.tagline{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5em;
+    font-size: large;
+}
+/* about us section */
+  /* Your CSS styles go here */
+  .main {
+    width: 100%;
+}
+
+.content-container-01,
+.content-container-02,
+.content-container-03,
+.content-container-04,
+.content-container-05 {
+    margin-left: 40px;
+    margin-top: 20px;
+    word-wrap: break-word; /* Word wrap for text */
+}
+
+.content-container-01 p,
+.content-container-02 p,
+.content-container-03 p,
+.content-container-04 p,
+.content-container-05 p {
+    width: 100%;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.content-img-01,
+.content-img-02,
+.content-img-03,
+.content-img-05,
+.content-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

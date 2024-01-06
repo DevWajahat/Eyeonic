@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="allstyle.css">
+    <link rel="stylesheet" href="allresponsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 700px){
+    header{
+        width: 100% ;
+        height: auto ;
+    }
+    .nav ol{
+        /* margin-top: 150px; */
+        flex-direction: column ;
+        text-align: center ;
+    }
+}
+    </style>
+</head>
+</head>
+<body>
+    <header>
+        <h1 class="Logo" style="color: #fff;">Eyeonic</h1>
+        <input type="checkbox" name="" id="" class="butn">
+            <div class="nav">
+                <ol>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a style="color: #fff;">Log In&nbsp;&nbsp;<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
+                    <li><a style="color: #fff;">Sign Up&nbsp;&nbsp;<i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></a></li>
+                </ol>
+            </div>
+       </header>
+     <div class="container mt-5" style="margin-top: 100px !important; margin-bottom:20px;">
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <img src="Ray ban/product 8 pt 1.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-primary">RAY-BAN</h2>
+                <h3>Focus Vision Frames</h3>
+                <p>Eye Glasses</p>
+                <hr>
+                <h4 class="text-danger">$249.00</h4>
+                <p>Matte GOLD - Blue Flash</p>
+                <p><strong>Availability:</strong> In Stock</p>
+                <form>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100% !important;" onclick="funistic()">Buy Now <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    function funistic() {
+    Swal.fire({
+      title: 'Enter Full Name and Card Number',
+      html:
+        '<input id="full-name" class="swal2-input" placeholder="Full Name">' +
+        '<input id="card-number" class="swal2-input" placeholder="Card Number">',
+      showCancelButton: true,
+      confirmButtonText: 'OK',
+      preConfirm: () => {
+        const fullName = document.getElementById('full-name').value;
+        const cardNumber = document.getElementById('card-number').value;
+        if (!fullName || !cardNumber) {
+          Swal.showValidationMessage('Please enter both full name and card number');
+        }
+        return { fullName, cardNumber };
+      },
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const fullName = result.value.fullName;
+        const cardNumber = result.value.cardNumber;
+        Swal.fire('Order Placed Successfully', `Full Name: ${fullName}\nCard Number: ${cardNumber}`, 'success');
+      }
+    });
+  }
+    </script>
+</body>
+</html>
